@@ -1,0 +1,509 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header nav {
+    width: 100%;
+    background-color: #009CFF;
+    position: fixed;
+    z-index: 414242523;
+}
+
+header nav div {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+header nav div ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav div ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 5px 5px;
+}
+
+header nav div ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+header nav div .logo li a {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+header nav div .logo li a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+header nav div .logo li a span {
+    color: yellow;
+}
+
+/* End of nav */
+
+header .section1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/1.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+header .section1 .layout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 70, 70, 0.6);
+    overflow: auto;
+}
+
+header .section1 p {
+    font-size: 40px;
+    margin: 150px 0px 50px;
+}
+
+header .section1 h1 {
+    font-size: 80px;
+}
+
+header .section1 p, .section1 h1 {
+    text-align: center;
+}
+
+@media(max-width: 969px) {
+    body {
+        background-color: rgba(70, 70, 70, 0.15);
+    }
+
+    header {
+        width: 100%;
+        height: 80vh;
+    }
+
+    header nav {
+        width: 100%;
+        background-color: rgba(70, 70, 70, 0.15);
+        position: static;
+    }
+
+    header nav div {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    header nav div ul li {
+        list-style-type: none;
+        display: block;
+        padding-left: 20px;
+        border-bottom: 2px solid blue;
+    }
+
+    header nav div ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin: 5px 0px;
+        padding: 5px 5px;
+    }
+
+    header nav div .logo {
+        background-color: blue;
+    }
+
+    header nav div .logo li a {
+        color: yellow;
+    }
+
+    header nav div .logo li a:hover {
+        background-color: transparent;
+        color: yellow;
+    }
+
+    header .section1 p {
+        font-size: 30px;
+        margin: 150px 0px 50px;
+    }
+
+    header .section1 h1 {
+        font-size: 40px;
+    }
+}
+
+/* End of header */
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0px;
+}
+
+.section2 .item {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.section2 .item:hover {
+    transform: translateY(-30px);
+}
+
+.section2 .item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.section2 .item p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.section2 .item h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+@media(max-width: 1360px) {
+    .container {
+        width: 90%;
+        margin: auto;
+        /* background-color: red; */
+    }
+}
+
+@media(max-width: 969px) {
+    .section2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 400px 0px 50px 0px;
+    }
+
+    .section2 .item {
+        background-color: #f1f1f1;
+        text-align: center;
+        width: 200px;
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid black;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+/* End of Section 2 */
+
+.section3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.sec3p1 {
+    padding-top: 20px;
+}
+
+.sec3p1 img {
+    width: 400px;
+    height: 400px;
+    box-shadow: -20px -20px #009CFF;
+    margin-left: 20px;
+}
+
+.sec3p2 {
+    width: 50%;
+}
+
+.sec3p2 h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.sec3p2 h1 span {
+    color: #009CFF;
+}
+
+.sec3p2 p {
+    font-size: 20px;
+}
+
+.sec3p2 input[type=submit] {
+    width: 200px;
+    margin: 30px 0px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: #009CFF;
+    color: white;
+}
+
+@media(max-width: 1360px) {
+    .sec3p2 h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 969px) {
+    .section3 {
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .sec3p1 {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .sec3p1 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sec3p2 {
+        width: 100%;
+    }
+
+    .sec3p2 h1 {
+        font-size: 30px;
+        padding: 10px;
+        margin: 50px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .sec3p2 p {
+        text-align: left;
+    }
+}
+
+/* End of section 3 */
+
+.section4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.section4 h1 {
+    font-size: 40px;
+}
+
+.alljobs {
+    margin-top: 100px;
+}
+
+.alljobsp1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job {
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 40px;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+}
+
+.job:hover {
+    transform: rotate(15deg);
+    transition: all 1s;
+}
+
+.job img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 969px) {
+    .section4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .section4 h1 {
+        font-size: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .alljobs {
+        margin-top: 100px;
+    }
+
+    .alljobsp1 {
+        width: 100%;
+        display: block;
+    }
+
+    .job {
+        width: 200px;
+        font-size: 20px;
+        margin-bottom: 50px;
+        padding: 40px;
+        border: 1px solid black;
+        background-color: #f1f1f1;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+/* End of container */
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 50px 0px;
+}
+
+footer .footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-container .foot {
+    width: 22%;
+}
+
+footer .footer-container .foot h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .foot p, footer .footer-container .foot li {
+    color: #707070;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+footer .footer-container .foot li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer .footer-container .foot .gallery {
+    width: 100%;
+}
+
+footer .footer-container .foot .gallery img {
+    width: 30%;
+    height: 30%;
+}
+
+footer .footer-container .foot .email {
+    margin-top: 20px;
+    padding: 5px;
+    outline: 1px solid #009CFF;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+footer .footer-container .foot .email input {
+    width: 150px;
+    background-color: black;
+    color: #707070;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+footer .footer-container .foot .email a {
+    text-decoration: none;
+    background-color: #009CFF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media(max-width: 1360px) {
+    footer .footer-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer .footer-container .foot {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 969px) {
+    footer .footer-container {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    footer .footer-container .foot {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    footer .footer-container .foot h1 {
+        color: white;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    footer .footer-container .foot p {
+        text-align: center;
+    }
+
+    footer .footer-container .foot .email {
+        margin-left: 70px;
+    }
+}
