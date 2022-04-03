@@ -6,6 +6,7 @@
 header {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 header nav {
@@ -68,7 +69,7 @@ header .section1 {
     background-size: 100% 100%;
     text-align: center;
     color: white;
-    overflow: hidden;
+    margin-top: 50px;
 }
 
 header .section1 .layout {
@@ -99,6 +100,7 @@ header .section1 p, .section1 h1 {
     header {
         width: 100%;
         height: 80vh;
+        overflow: visible;
     }
 
     header nav {
@@ -140,6 +142,10 @@ header .section1 p, .section1 h1 {
     header nav div .logo li a:hover {
         background-color: transparent;
         color: yellow;
+    }
+
+    header .section1 {
+        margin-top: 0px;
     }
 
     header .section1 p {
